@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="22dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_movie_image"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/iv_movie_image"
+        android:layout_below="@+id/tv_name"
+        android:layout_width="20dp"
+        android:layout_alignBottom="@+id/tv_likes"
+        android:layout_height="20dp"
+        android:id="@+id/iv_like_image"/>
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tv_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/iv_like_image"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_movie_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="6dp"/>
+
+</RelativeLayout>
